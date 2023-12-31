@@ -1,9 +1,8 @@
-
 extern crate regex;
 use regex::Regex;
 
 pub fn validate(phone: &str) -> bool {
-    let phone_regex = Regex::new(r"^\+?[1-9]\d{1,14}$").unwrap();
+    let phone_regex = Regex::new(r"^\+?[1-9][0-9]{7,14}$").unwrap();
     phone_regex.is_match(phone)
 }
 
