@@ -1,6 +1,6 @@
 [package]
 name = "verust"
-version = "0.1.0"
+version = "0.2.4"
 edition = "2021"
 license-file = "LICENSE"
 description = "Library verust is a versatile validation library, written in the Rust programming language, enabling the validation of data such as emails, URLS, phone numbers, and passwords. This efficient tool ensures the reliability of your input data and helps to maintain application quality at its highest."
