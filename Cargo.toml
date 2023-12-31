@@ -2,7 +2,14 @@
 name = "verust"
 version = "0.1.0"
 edition = "2021"
+license-file = "LICENSE"
+description = "Library verust is a versatile validation library, written in the Rust programming language, enabling the validation of data such as emails, URLS, phone numbers, and passwords. This efficient tool ensures the reliability of your input data and helps to maintain application quality at its highest."
+homepage = "https://mano7onam.github.io/verust/"
+documentation = "https://mano7onam.github.io/verust/docs/"
+repository = "https://github.com/mano7onam/verust.git/"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+regex = "1.10.2"
