@@ -32,7 +32,7 @@ impl EmailValidator {
 
     pub fn is_valid(&self, email: &str) -> bool {
         let email_regex = Regex::new(
-            r"(?i)^[\w+\-.+%]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]{2,}$").unwrap();
+            r"^[\w+\-.+%]+[^.]@([a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]{2,}$)").unwrap();
 
         let length = email.len();
         let length_valid = self.min_length <= length && length <= self.max_length;
@@ -104,6 +104,6 @@ mod tests {
         let validator = EmailValidator::new(5, 254).deny_symbols(".%");
 
         assert!(validator.is_valid("someone@example.com"));
-        // assert!(!validator.is_valid("someone.@example.com"));
+        assert!(!validator.is_valid("someone.@example.com"));
     }
 }
