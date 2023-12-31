@@ -1,6 +1,6 @@
 # verust
 
-verust is a small but powerful library for data validation in Rust.
+Library for data validation in Rust.
 
 It provides validation functions for:
 
